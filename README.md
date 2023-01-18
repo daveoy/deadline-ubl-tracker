@@ -11,7 +11,7 @@ see Dockerfile for specifics, but
 docker build . -t <repository_build_info>
 ```
 
-if you're building on an M1 mac, make sure you set `--platform x86_64` when you build the container.
+NOTE**: if you're building on an M1 mac but running the container on a linux x86_64 based system, make sure you set `--platform x86_64` when you build the container.
 
 ## usage / orchestration information
 
@@ -19,7 +19,7 @@ you need to set:
 
 FNO_SERVER, FNO_PASSWORD and LISTEN_PORT (optional, defaults to 9666) when running this script or the built container.
 
-if you plan to run this outside of docker you'll need to `pip install prometheus_client requests`.
+NOTE**: if you plan to run this outside of docker you'll need to `pip install prometheus_client requests`.
 
 example:
 
