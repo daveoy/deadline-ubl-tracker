@@ -13,6 +13,15 @@ docker build . -t <repository_build_info>
 
 NOTE**: if you're building on an M1 mac but running the container on a linux x86_64 based system, make sure you set `--platform x86_64` when you build the container.
 
+## grafana dashboard
+
+a grafana dashboard can be found at `ubl.json`. this dashboard is compatible with grafana 8+
+the variables need tweaking to properly repeat, PRs welcome
+
+## prometheus alerting rules
+
+PRs welcome
+
 ## usage / orchestration information
 
 you need to set:
